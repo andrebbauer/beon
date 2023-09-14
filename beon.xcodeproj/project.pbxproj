@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		651996CC2AB38816000866C8 /* beonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651996CB2AB38816000866C8 /* beonApp.swift */; };
-		651996CE2AB38816000866C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651996CD2AB38816000866C8 /* ContentView.swift */; };
+		651996CE2AB38816000866C8 /* FactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651996CD2AB38816000866C8 /* FactListView.swift */; };
 		651996D02AB38817000866C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651996CF2AB38817000866C8 /* Assets.xcassets */; };
 		651996D32AB38817000866C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651996D22AB38817000866C8 /* Preview Assets.xcassets */; };
+		651996DB2AB3947D000866C8 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651996DA2AB3947D000866C8 /* Fact.swift */; };
+		651996DE2AB395B9000866C8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651996DD2AB395B9000866C8 /* NetworkService.swift */; };
+		651996E12AB397D5000866C8 /* FactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651996E02AB397D5000866C8 /* FactDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		651996C82AB38816000866C8 /* beon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		651996CB2AB38816000866C8 /* beonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beonApp.swift; sourceTree = "<group>"; };
-		651996CD2AB38816000866C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		651996CD2AB38816000866C8 /* FactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactListView.swift; sourceTree = "<group>"; };
 		651996CF2AB38817000866C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		651996D22AB38817000866C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		651996DA2AB3947D000866C8 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		651996DD2AB395B9000866C8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		651996E02AB397D5000866C8 /* FactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,10 @@
 		651996CA2AB38816000866C8 /* beon */ = {
 			isa = PBXGroup;
 			children = (
+				651996DF2AB397C9000866C8 /* Views */,
+				651996DC2AB395AF000866C8 /* Services */,
+				651996D92AB39474000866C8 /* Models */,
 				651996CB2AB38816000866C8 /* beonApp.swift */,
-				651996CD2AB38816000866C8 /* ContentView.swift */,
 				651996CF2AB38817000866C8 /* Assets.xcassets */,
 				651996D12AB38817000866C8 /* Preview Content */,
 			);
@@ -65,6 +73,31 @@
 				651996D22AB38817000866C8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		651996D92AB39474000866C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				651996DA2AB3947D000866C8 /* Fact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		651996DC2AB395AF000866C8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				651996DD2AB395B9000866C8 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		651996DF2AB397C9000866C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				651996CD2AB38816000866C8 /* FactListView.swift */,
+				651996E02AB397D5000866C8 /* FactDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				651996CE2AB38816000866C8 /* ContentView.swift in Sources */,
+				651996CE2AB38816000866C8 /* FactListView.swift in Sources */,
+				651996DB2AB3947D000866C8 /* Fact.swift in Sources */,
+				651996E12AB397D5000866C8 /* FactDetailView.swift in Sources */,
+				651996DE2AB395B9000866C8 /* NetworkService.swift in Sources */,
 				651996CC2AB38816000866C8 /* beonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +316,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +346,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -6,7 +6,7 @@ import SwiftUI
 struct beonApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			FactListView(viewModel: .init())
         }
     }
 }
